@@ -30,9 +30,11 @@ git remote add origin 원격지주소
 # 1. 커밋이력 그대로 가져가기(원격지주소 바꾸기)
 git clone 레포주소
 git remote set-url origin 레포주소 #원격지 주소 변경
+git push origin main
 
 # 2. 커밋이력 없이 가져가기
 # .git 폴더 삭제
+git clone 레포주소
 git init
 git remote add origin 원격지주소
 git checkout -b main #main브랜치 생성 및 변경
