@@ -28,3 +28,14 @@ git push origin 브랜치명 --force
 git checkout 커밋ID
 # 특정 브랜치로 전환
 git checkout 브랜치명
+
+# commitID간 또는 브랜치사이의 비교 명령어
+git diff commitID commitID2
+git diff 브랜치1 브랜치2
+
+# 가장 최신의 커밋 취소
+git reset head~1
+git reset head^
+
+# 이미 push commit사항을 되돌리는 새로운 commit생성
+git revert 커밋ID
